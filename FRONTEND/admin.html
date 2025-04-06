@@ -1,0 +1,32 @@
+<div class="admin-container">
+    <!-- Order Filters -->
+    <div class="filters">
+      <select id="time-filter">
+        <option value="today">Today</option>
+        <option value="week">This Week</option>
+      </select>
+      <input type="text" id="search" placeholder="Search orders...">
+    </div>
+  
+    <!-- Orders Table -->
+    <table id="orders-table">
+      <thead>
+        <tr>
+          <th data-column="id">Order ID ▼</th>
+          <th data-column="customer">Customer</th>
+          <th data-column="items">Items</th>
+          <th data-column="status">Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  
+    <!-- Order Detail Modal -->
+    <div id="order-modal" class="modal">
+      <div class="modal-content">
+        <h2>Order #<span id="modal-order-id"></span></h2>
+        <div id="modal-order-details"></div>
+      </div>
+    </div>
+  </div>

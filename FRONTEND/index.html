@@ -1,0 +1,33 @@
+<!-- Simplified core structure -->
+<div class="order-flow">
+    <!-- Step 1: Customer Info -->
+    <section id="customer-info" class="active-step">
+      <h2>Your Details</h2>
+      <input type="text" id="customer-name" placeholder="Full Name" required>
+      <input type="tel" id="customer-phone" pattern="[0-9]{10}" placeholder="Phone">
+    </section>
+  
+    <!-- Step 2: Menu Selection -->
+    <section id="menu-selection">
+      <div class="menu-category">
+        <h3>Pizzas</h3>
+        <div class="menu-item" data-id="1" data-price="12.99">
+          <span>Margherita</span>
+          <span>$12.99</span>
+          <div class="quantity-control">
+            <button class="decrement">-</button>
+            <span class="count">0</span>
+            <button class="increment">+</button>
+          </div>
+        </div>
+        <!-- More items -->
+      </div>
+    </section>
+  
+    <!-- Step 3: Checkout -->
+    <section id="checkout">
+      <h2>Order Summary</h2>
+      <div id="order-summary"></div>
+      <button id="place-order">Place Order ($<span id="total">0.00</span>)</button>
+    </section>
+  </div>
